@@ -1,0 +1,107 @@
+html, body {
+  background-color: #1d232c; /* Dark background for the page */
+  color: #f6f6f6;
+}
+.App{
+  background-color: #1d232c;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(195, 195, 195);
+}
+
+h1 {
+  text-align: center;
+}
+.heading{
+  margin-bottom: 30px ;
+}
+
+/* Form for adding a new todo */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.todo-form button {
+  background-color: #4f6ef7;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Filter dropdown */
+.todo-filter {
+  margin-bottom: 20px;
+}
+
+.todo-filter select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  margin-left: -27px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Flexbox for todo items */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+/* Action buttons */
+.todo-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.todo-actions button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-actions .delete-btn {
+  color: #ff4d4d;
+}
+
+.todo-actions .edit-btn {
+  color: #4f6ef7;
+}
